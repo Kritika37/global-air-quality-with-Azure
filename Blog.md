@@ -23,6 +23,18 @@ Air pollution can cause serious harm to human and animal health. It is really up
 ![alt text](https://github.com/Kritika37/global-air-quality-with-Azure/blob/main/pictures/g1.png)
 you will be able to see this
 
+4. Select create and fill the required things
+
+* Subscription: Your subscription (Mine is Visual studio subscription one but you can select free one)
+
+* Resource group: Select Create new (Name it something relatable as per the app)
+
+* Name: A unique value, such as global-air-quality
+
+* Pricing tier: Standard S1
+
+5. Now,finally select Review+create and then go to resource. There on the left pane you will see a tab named Authentication.
+
 
 
 
