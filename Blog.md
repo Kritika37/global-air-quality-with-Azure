@@ -20,7 +20,8 @@ Air pollution can cause serious harm to human and animal health. It is really up
 
 3. In the search box,type Azure Map account
 
-![alt text]()
+![alt text](https://github.com/Kritika37/global-air-quality-with-Azure/blob/main/pictures/g1.png)
+you will be able to see this
 
 
 
