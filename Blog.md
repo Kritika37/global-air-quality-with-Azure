@@ -1,5 +1,5 @@
 
-Air pollution can cause serious harm to human and animal health. It is really upsetting to see how the air quality of different countries has been deterioated.Air pollution is measured by the Air Quality Index (AQI). The index reflects a scale that ranges from 0 to 500. The higher the AQI value, the greater the health risk.
+Air pollution can cause serious harm to human and animal health. It is really upsetting to see how the air quality of different countries has been deteriorated. Air pollution is measured by the Air Quality Index (AQI). The index reflects a scale that ranges from 0 to 500. The higher the AQI value, the greater the health risk. Let's study our air quality and built a tracker for it.
 
 
 ## Today,we will learn to how to create a web application using Azure map and free API from Air Quality Open Data Platform.
