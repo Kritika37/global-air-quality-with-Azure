@@ -175,7 +175,7 @@ def home():
 </html>
 ```
 
-This webpage renders a full-screen div element that has an ID of myMap. After the page is fully loaded, in the browser, the app requests the user's location. The app can get the user's location only if the user grants permission. 
+> This webpage renders a full-screen div element that has an ID of myMap. After the page is fully loaded, in the browser, the app requests the user's location. The app can get the user's location only if the user grants permission. 
 
 
 6. Now we are ready to test our home page on localhost:5000 ,which is default port number for http requests in flask.
@@ -346,8 +346,9 @@ def get_aqi():
 
     # Load the AQI data and create the GeoJSON for the specified bounds.
     return json.dumps(load_aqi_data(bounds[0], bounds[1], bounds[2], bounds[3]))
+   ```
 
-    ```    
+
 ![alt text](https://github.com/Kritika37/global-air-quality-with-Azure/blob/main/pictures/output.png)
 
 
