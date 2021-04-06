@@ -2,7 +2,7 @@
 Air pollution can cause serious harm to human and animal health. It is really upsetting to see how the air quality of different countries has been deteriorated. Air pollution is measured by the Air Quality Index (AQI). The index reflects a scale that ranges from 0 to 500. The higher the AQI value, the greater the health risk. Let's study our air quality and built a tracker for it.
 
 
-## Today,we will learn to how to create a web application using Azure map and free API from Air Quality Open Data Platform.
+## Today,we will learn to how to create a web application in Flask using Azure map and free API from Air Quality Open Data Platform.
 
 
 ### Prerequisites:
@@ -21,7 +21,8 @@ Air pollution can cause serious harm to human and animal health. It is really up
 3. In the search box,type Azure Map account
 
 ![alt text](https://github.com/Kritika37/global-air-quality-with-Azure/blob/main/pictures/g1.png)
-you will be able to see this
+
+> you will be able to see this
 
 4. Select create and fill the required things
 
@@ -345,7 +346,7 @@ def get_aqi():
     bounds = request.args["bounds"].split(",")
 
     # Load the AQI data and create the GeoJSON for the specified bounds.
-    return json.dumps(load_aqi_data(bounds[0], bounds[1], bounds[2], bounds[3]))
+    return json.dumps(load_aq8i_data(bounds[0], bounds[1], bounds[2], bounds[3]))
    ```
 
 
