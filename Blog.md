@@ -171,16 +171,20 @@ This code handles requests to /, which is the root of the website. When this web
 </html>
 
 ```
+
 This webpage renders a full-screen div element that has an ID of myMap. After the page is fully loaded, in the browser, the app requests the user's location. The app can get the user's location only if the user grants permission. 
+
 
 6. Now we are ready to test our home page on localhost:5000 ,which is default port number for http requests in flask.
 
 ```
-# Linux/macOS (server will automatically reload with every change)
-export FLASK_ENV=development
-Now you can just type this for running your server
-flask run 
+Linux/macOS (server will automatically reload with every change)
 
+export FLASK_ENV=development
+
+Now you can just type this for running your server
+
+flask run 
 ```
 
 ### STEP 4: SHOW AIR QUALITY DATA ON MAP
