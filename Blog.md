@@ -72,6 +72,7 @@ pip install -r requirements.txt
 
 > Congratulations! You’ve now setup your environment for development!
 
+
 ### STEP 3: LET'S CREATE THE APP
 
 1. Typically, the entry point for Flask applications is a file named app.py. We’re going to follow this convention and create the core of our application.
@@ -106,8 +107,9 @@ def home():
     data = { "map_key" : MAP_KEY }
     # Return the rendered HTML page
     return render_template("home.html", data = data)
-
     ```
+
+
 This code handles requests to /, which is the root of the website. When this webpage is loaded, the app uses the key from your .env file to create data. The data is used to render the home.html file as a parameter named data.
 
 5. In Visual Studio Code, in the templates folder, create a new HTML file named home.html.
@@ -169,8 +171,8 @@ This code handles requests to /, which is the root of the website. When this web
     </script>
 </body>
 </html>
-
 ```
+
 
 This webpage renders a full-screen div element that has an ID of myMap. After the page is fully loaded, in the browser, the app requests the user's location. The app can get the user's location only if the user grants permission. 
 
@@ -178,14 +180,16 @@ This webpage renders a full-screen div element that has an ID of myMap. After th
 6. Now we are ready to test our home page on localhost:5000 ,which is default port number for http requests in flask.
 
 ```
+
 Linux/macOS (server will automatically reload with every change)
 
 export FLASK_ENV=development
 
 Now you can just type this for running your server
 
-flask run 
+flask run
 ```
+
 
 ### STEP 4: SHOW AIR QUALITY DATA ON MAP
 
@@ -237,7 +241,6 @@ map.events.add('ready', function () {
         zoom: 5
     })
 })
-
 ```
 
 with this
@@ -284,10 +287,10 @@ map.events.add('ready', function () {
         zoom: 5
     })
 })
-
 ```
 
-This data source is used to create a bubble/circle type that shows circles on a map. This get the color according to Air Quality index and represnet it on the map['get', 'color'] and tells the map to load the color from a property of the feature called color.
+
+> This data source is used to create a bubble/circle type that shows circles on a map. This get the color according to Air Quality index and represnet it on the map['get', 'color'] and tells the map to load the color from a property of the feature called color.
 
 
 11. Now the final step for calling our API .It calls the API inside the Flask app that loads the AQI data from the API for a specific set of coordinates. The AQI data is then converted to a feature collection and returned as a JSON string. Then, the API can be called from the webpage.
@@ -342,7 +345,6 @@ def get_aqi():
 
     # Load the AQI data and create the GeoJSON for the specified bounds.
     return json.dumps(load_aqi_data(bounds[0], bounds[1], bounds[2], bounds[3]))
-
     ```
 
 ![alt text](https://github.com/Kritika37/global-air-quality-with-Azure/blob/main/pictures/output.png)
