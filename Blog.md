@@ -107,10 +107,12 @@ def home():
     data = { "map_key" : MAP_KEY }
     # Return the rendered HTML page
     return render_template("home.html", data = data)
-    ```
+
+```    
 
 
-This code handles requests to /, which is the root of the website. When this webpage is loaded, the app uses the key from your .env file to create data. The data is used to render the home.html file as a parameter named data.
+> This code handles requests to /, which is the root of the website. When this webpage is loaded, the app uses the key from your .env file to create data. The data is used to render the home.html file as a parameter named data.
+
 
 5. In Visual Studio Code, in the templates folder, create a new HTML file named home.html.
 
@@ -172,7 +174,6 @@ This code handles requests to /, which is the root of the website. When this web
 </body>
 </html>
 ```
-
 
 This webpage renders a full-screen div element that has an ID of myMap. After the page is fully loaded, in the browser, the app requests the user's location. The app can get the user's location only if the user grants permission. 
 
@@ -347,7 +348,6 @@ def get_aqi():
     return json.dumps(load_aqi_data(bounds[0], bounds[1], bounds[2], bounds[3]))
 
     ```    
-
 ![alt text](https://github.com/Kritika37/global-air-quality-with-Azure/blob/main/pictures/output.png)
 
 
