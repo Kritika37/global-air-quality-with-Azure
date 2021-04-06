@@ -107,12 +107,14 @@ def home():
     data = { "map_key" : MAP_KEY }
     # Return the rendered HTML page
     return render_template("home.html", data = data)
+
     ```
 
 
 This code handles requests to /, which is the root of the website. When this webpage is loaded, the app uses the key from your .env file to create data. The data is used to render the home.html file as a parameter named data.
 
 5. In Visual Studio Code, in the templates folder, create a new HTML file named home.html.
+
 
 ```
 <!doctype html>
@@ -171,6 +173,7 @@ This code handles requests to /, which is the root of the website. When this web
     </script>
 </body>
 </html>
+
 ```
 
 
@@ -344,8 +347,8 @@ def get_aqi():
     bounds = request.args["bounds"].split(",")
 
     # Load the AQI data and create the GeoJSON for the specified bounds.
-    return json.dumps(load_aqi_data(bounds[0], bounds[1], bounds[2], bounds[3]))
-    ```
+    return json.dumps(load_aqi_data(bounds[0], bounds[1], bounds[2], bounds[3]))\
+```
 
 ![alt text](https://github.com/Kritika37/global-air-quality-with-Azure/blob/main/pictures/output.png)
 
