@@ -292,6 +292,8 @@ This data source is used to create a bubble/circle type that shows circles on a 
 
 Add the following code to the bottom of the file:
 
+
+
 ```
 def get_color(aqi):
     # Convert the AQI value to a color.
